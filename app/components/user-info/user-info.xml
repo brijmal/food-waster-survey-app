@@ -1,0 +1,22 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd">
+    <StackLayout class="p-4 space-y-4">
+        <Label text="Personal Information" class="text-xl font-semibold mb-2" />
+        
+        <Label text="Full Name:" class="text-lg" />
+        <TextField text="{{ userName }}" 
+                  hint="Enter your full name" 
+                  class="input p-2 border rounded" />
+        
+        <Label text="Mobile Number:" class="text-lg" />
+        <TextField text="{{ mobileNumber }}" 
+                  hint="Enter your mobile number" 
+                  keyboardType="phone" 
+                  class="input p-2 border rounded" />
+        
+        <Label text="Residential Address:" class="text-lg" />
+        <TextView text="{{ address }}" 
+                  hint="Enter your complete address" 
+                  class="input p-2 border rounded" 
+                  height="100" />
+    </StackLayout>
+</Page>

@@ -1,0 +1,3 @@
+# food-waster-survey-app
+
+[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/brijmal/food-waster-survey-app)

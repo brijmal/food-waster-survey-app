@@ -1,0 +1,28 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd">
+    <StackLayout class="p-4 space-y-4">
+        <Label text="Survey Questions" class="text-xl font-semibold mb-2" />
+        
+        <Label text="Number of people in household:" class="text-lg" />
+        <TextField text="{{ householdSize }}" 
+                  keyboardType="number" 
+                  class="input p-2 border rounded" />
+        
+        <Label text="Meals cooked at home per day:" class="text-lg" />
+        <TextField text="{{ mealsCooked }}" 
+                  keyboardType="number" 
+                  class="input p-2 border rounded" />
+        
+        <Label text="Estimated food waste per day (in grams):" class="text-lg" />
+        <TextField text="{{ foodWasteAmount }}" 
+                  keyboardType="number" 
+                  class="input p-2 border rounded" />
+        
+        <Label text="Main reason for food waste:" class="text-lg" />
+        <ListPicker items="{{ wasteReasons }}" 
+                   selectedIndex="{{ selectedReasonIndex }}" 
+                   class="p-2 border rounded" />
+        
+        <Label text="Are you willing to reduce food waste?" class="text-lg" />
+        <Switch checked="{{ willingToReduce }}" class="ml-2" />
+    </StackLayout>
+</Page>
